@@ -1,0 +1,108 @@
+
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="#" class="logo">Dev.Folio</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle" class="theme-btn" aria-label="Toggle theme">🌓</button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero" id="about">
+    <div class="hero-content">
+      <h1>Building Next-Gen Responsive Architectures</h1>
+      <p>UI Engineer specializing in advanced CSS Grid, Flexbox layouts, and dynamic theme engines.</p>
+      <a href="#projects" class="btn">View My Work</a>
+    </div>
+  </header>
+
+  <!-- Projects Dashboard (CSS Grid) -->
+  <main class="portfolio-container" id="projects">
+    <h2 class="section-title">Featured Projects</h2>
+    
+    <div class="projects-grid">
+      <!-- Project 1: Featured (Spans multiple rows/columns on desktop) -->
+      <article class="project-card featured">
+        <div class="card-badge">Featured</div>
+        <div class="card-content">
+          <h3>E-Commerce Dashboard</h3>
+          <p>A complex data visualization grid built entirely with CSS Grid and subgrid layouts for nested alignment.</p>
+          <div class="tags">
+            <span>CSS Grid</span>
+            <span>Flexbox</span>
+            <span>API Integration</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2 -->
+      <article class="project-card">
+        <div class="card-content">
+          <h3>SaaS Landing Page</h3>
+          <p>Mobile-first UI implementation optimizing performance and localized asset rendering architectures.</p>
+          <div class="tags">
+            <span>Mobile-First</span>
+            <span>BEM CSS</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 3 -->
+      <article class="project-card">
+        <div class="card-content">
+          <h3>Social Media Aggregator</h3>
+          <p>Real-time content feed utilizing dynamic localized Flexbox component alignments.</p>
+          <div class="tags">
+            <span>Flexbox</span>
+            <span>JavaScript</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 4 -->
+      <article class="project-card">
+        <div class="card-content">
+          <h3>Interactive Design System</h3>
+          <p>Component library driven completely by unified architectural token variations and CSS Variables.</p>
+          <div class="tags">
+            <span>CSS Variables</span>
+            <span>Design Tokens</span>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- Contact Footer -->
+  <footer class="footer" id="contact">
+    <p>&copy; 2026 Developer Portfolio. All rights architectural.</p>
+  </footer>
+
+  <!-- Theme Engine Logic -->
+  <script>
+    const toggleBtn = document.getElementById('theme-toggle');
+    const htmlElement = document.documentElement;
+
+    toggleBtn.addEventListener('click', () => {
+      const currentTheme = htmlElement.getAttribute('data-theme');
+      const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+      htmlElement.setAttribute('data-theme', newTheme);
+    });
+  </script>
+</body>
+</html>
